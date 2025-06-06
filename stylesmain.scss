@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+body {
+    font-family: "Montserrat", sans-serif;
+ }
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+ }
+.top {
+  height: 800px;
+  background-image: url(./Изображения/BckgrndTop.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content__title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  padding-top: 64px;
+  padding-bottom: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #ffffff;
+}
+.content__par {
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #ffffff;
+}
+.content__link {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+}
