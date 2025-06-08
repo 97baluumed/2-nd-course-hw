@@ -77,7 +77,7 @@ body {
   text-decoration: none;
 }
 
-.about__games {
+.about {
   height: 1470px;
   background-color: rgb(32, 32, 39);
   background-image: url(./Изображения/BigStarGreenTransp.png), url(./Изображения/MiniGreenStarTransp.png), url(./Изображения/StarGreenTransp.png);

@@ -12,9 +12,17 @@ body {
 .top {
     height: 800px;
     background-color: rgb(225, 255, 143);
-    background-image: url(./Изображения/BigStar1.png), url(./Изображения/StarGreen.png), url(./Изображения/MiniTransparStar.png), url(./Изображения/MiniGreenStar.png), url(./Изображения/StarTranspar.png);
+    background-image: url(./Изображения/BigStar1.png), 
+    url(./Изображения/StarGreen.png), 
+    url(./Изображения/MiniTransparStar.png), 
+    url(./Изображения/MiniGreenStar.png), 
+    url(./Изображения/StarTranspar.png);
     background-repeat: no-repeat;
-    background-position: right -488px top -333.46px, left 63px top 94px, left 156px top 69px, left 948px top 538px, left 1013px top 568px;
+    background-position: right -488px top -333.46px, 
+    left 63px top 94px, 
+    left 156px top 69px, 
+    left 948px top 538px, 
+    left 1013px top 568px;
 }
 .content {
     padding-top: 196px;
@@ -65,12 +73,16 @@ body {
 .about__content-link {
     text-decoration: none;
 }
-.about__games {
+.about {
     height: 1470px;
     background-color: rgb(32, 32, 39);
-    background-image: url(./Изображения/BigStarGreenTransp.png), url(./Изображения/MiniGreenStarTransp.png), url(./Изображения/StarGreenTransp.png);
+    background-image: url(./Изображения/BigStarGreenTransp.png), 
+    url(./Изображения/MiniGreenStarTransp.png), 
+    url(./Изображения/StarGreenTransp.png);
     background-repeat: no-repeat;
-    background-position: right -142.56px top 77px, left 27.97px top 770px, left 45.18px top 822px;
+    background-position: right -142.56px top 77px, 
+    left 27.97px top 770px, 
+    left 45.18px top 822px;
 }
 .about__games-title {
     padding-top: 94px;
