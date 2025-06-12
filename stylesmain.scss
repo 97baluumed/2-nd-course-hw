@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+body {
+    font-family: "Montserrat", sans-serif;
+ }
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+ }
+.top {
+    height: 800px;
+    background-color: rgb(225, 255, 143);
+    background-image: url(./Изображения/BigStar1.png), 
+    url(./Изображения/StarGreen.png), 
+    url(./Изображения/MiniTransparStar.png), 
+    url(./Изображения/MiniGreenStar.png), 
+    url(./Изображения/StarTranspar.png);
+    background-repeat: no-repeat;
+    background-position: right -488px top -333.46px, 
+    left 63px top 94px, 
+    left 156px top 69px, 
+    left 948px top 538px, 
+    left 1013px top 568px;
+}
+.content {
+    padding-top: 196px;
+    width: 768px;
+}
+.content__title {
+    color: rgb(32, 32, 39);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.content__div {
+    display: flex;
+}
+.content__par {
+    padding-top: 24px;
+    padding-right: 48px;
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.content__button-item {
+    margin-top: 48px;
+    width: 247px;
+    height: 66px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+}
+.content__button-item:hover {
+    color: rgb(32, 32, 39);
+    background: rgb(255, 255, 255);
+}
+.about__content-link {
+    text-decoration: none;
+}
+.about {
+    height: 1470px;
+    background-color: rgb(32, 32, 39);
+    background-image: url(./Изображения/BigStarGreenTransp.png), 
+    url(./Изображения/MiniGreenStarTransp.png), 
+    url(./Изображения/StarGreenTransp.png);
+    background-repeat: no-repeat;
+    background-position: right -142.56px top 77px, 
+    left 27.97px top 770px, 
+    left 45.18px top 822px;
+}
+.about__games-title {
+    padding-top: 94px;
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.about__games-par {
+    padding-top: 24px;
+    padding-right: 413px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.about__content {
+    display: flex;
+    gap: 32px;
+    padding-top: 72px;
+}
+.about__content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.games {
+    width: 378px;
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+.games:hover {
+    transform: scale(1.08);
+}
+.games__img {
+    border-radius: 30px;
+}
+.games__text {
+    padding: 32px;
+    padding-bottom: 36px;
+}
+.games__num {
+    width: 108px;
+    color: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 8px 16px 10px 16px;
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+}
+.games__name {
+    padding-top: 16px;
+    color: rgb(32, 32, 39);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+}
