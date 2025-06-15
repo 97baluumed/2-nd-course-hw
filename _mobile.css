@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .top {
+        height: 700px;
+    }
+    .content {
+        &__title {
+            color: rgb(32, 32, 39);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+    .about {
+        display: none;
+    }
+}

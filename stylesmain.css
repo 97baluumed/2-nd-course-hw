@@ -23,7 +23,6 @@ body {
 
 .content {
   padding-top: 196px;
-  width: 768px;
 }
 
 .content__title {
@@ -161,4 +160,57 @@ body {
   line-height: 39px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 17px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 700px;
+    background-color: rgb(225, 255, 143);
+    background-image: url(./Изображения/MobGreenBigStar1.png), url(./Изображения/StarGreen2.png), url(./Изображения/MiniTransparStar2.png), url(./Изображения/MiniGreenStar2.png), url(./Изображения/StarTranspar2.png);
+    background-repeat: no-repeat;
+    background-position: left 216.33px top -82.18px, left 37px top 97px, left 91px top 64px, left 272px top 557px, left 303px top 580px;
+  }
+  .content {
+    width: 343px;
+    left: 18px;
+    padding-top: 147px;
+  }
+  .content__title {
+    width: 262px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-left: 40.5px;
+    padding-right: 40.5px;
+  }
+  .content__par {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-left: 23.5px;
+    padding-right: 23.5px;
+  }
+  .content__par br {
+    display: none;
+  }
+  .content__button {
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  .content__button-item {
+    margin-top: 36px;
+    width: 285px;
+    height: 55px;
+  }
+  .about {
+    display: none;
+  }
 }/*# sourceMappingURL=stylesmain.css.map */
