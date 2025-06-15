@@ -1,4 +1,4 @@
-/*let a = 10;
+let a = 10;
 alert(a);2
 a = 20;
 alert(a);
@@ -43,4 +43,4 @@ const User = {
 }
 
 let nameUser = prompt('Как тебя зовут?');
-alert(`Привет, ${nameUser}!`);*/
+alert(`Привет, ${nameUser}!`);
