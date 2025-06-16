@@ -6,11 +6,11 @@
     .top {
         height: 700px;
         background-color: rgb(225, 255, 143);
-        background-image: url(./Изображения/MobGreenBigStar1.png), 
-        url(./Изображения/StarGreen2.png), 
-        url(./Изображения/MiniTransparStar2.png), 
-        url(./Изображения/MiniGreenStar2.png), 
-        url(./Изображения/StarTranspar2.png);
+        background-image: url(./Изображения/MobGreenBigStar1.svg), 
+        url(./Изображения/StarGreen2.svg), 
+        url(./Изображения/MiniTransparStar2.svg), 
+        url(./Изображения/MiniGreenStar2.svg), 
+        url(./Изображения/StarTranspar2.svg);
         background-repeat: no-repeat;
         background-position: left 216.33px top -82.18px, 
         left 37px top 97px, 
@@ -52,6 +52,7 @@
             margin-top: 36px;
             width: 285px;
             height: 55px;
+            font-size: 16px;
         }
     }
     .about {
