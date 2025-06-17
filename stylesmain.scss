@@ -12,11 +12,11 @@ body {
 .top {
     height: 800px;
     background-color: rgb(225, 255, 143);
-    background-image: url(./Изображения/BigStar1.png), 
-    url(./Изображения/StarGreen.png), 
-    url(./Изображения/MiniTransparStar.png), 
-    url(./Изображения/MiniGreenStar.png), 
-    url(./Изображения/StarTranspar.png);
+    background-image: url(./Изображения/BigStar1.svg), 
+    url(./Изображения/StarGreen.svg), 
+    url(./Изображения/MiniTransparStar.svg), 
+    url(./Изображения/MiniGreenStar.svg), 
+    url(./Изображения/StarTranspar.svg);
     background-repeat: no-repeat;
     background-position: right -488px top -333.46px, 
     left 63px top 94px, 
@@ -26,7 +26,6 @@ body {
 }
 .content {
     padding-top: 196px;
-    width: 768px;
 }
 .content__title {
     color: rgb(32, 32, 39);
@@ -76,11 +75,11 @@ body {
 .about {
     height: 1470px;
     background-color: rgb(32, 32, 39);
-    background-image: url(./Изображения/BigStarGreenTransp.png), 
-    url(./Изображения/MiniGreenStarTransp.png), 
-    url(./Изображения/StarGreenTransp.png);
+    background-image: url(./Изображения/BigStarGreenTransp.svg), 
+    url(./Изображения/MiniGreenStarTransp.svg), 
+    url(./Изображения/StarGreenTransp.svg);
     background-repeat: no-repeat;
-    background-position: right -142.56px top 77px, 
+    background-position: right -111px top 110px, 
     left 27.97px top 770px, 
     left 45.18px top 822px;
 }
@@ -152,3 +151,5 @@ body {
     letter-spacing: 0px;
     text-align: left;
 }
+
+@import 'mobile'
