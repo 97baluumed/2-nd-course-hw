@@ -81,6 +81,14 @@ body {
   gap: 0px;
 }
 
+.line-align {
+  padding-left: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 51px;
+}
+
 .line {
   height: 90px;
   box-sizing: border-box;
