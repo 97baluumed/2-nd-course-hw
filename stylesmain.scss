@@ -193,8 +193,6 @@ body {
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgb(255, 255, 255);
-    transform: scale(1);
-    transition: transform 0.5s;
     &__name {
         color: rgb(32, 32, 39);
         font-size: 48px;
@@ -218,6 +216,9 @@ body {
     &__img {
         border-radius: 30px;
     }
+    &__button {
+    display: flex;
+    }
     &__button-item {
         margin-top: 36px;
         width: 247px;
@@ -230,15 +231,16 @@ body {
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__button-item:hover {
     color: rgb(32, 32, 39);
     background: rgb(255, 255, 255);
+    }
 }
-}
-.block-games:hover {
-    transform: scale(1.08);
-}
+
 .footer {
     background: rgb(189, 237, 53);
     height: 150px;
