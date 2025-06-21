@@ -8,6 +8,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesmain.css">
+    <script>
+        // Игра Угадай число
+        function guessNumber() {
+            const targetNumber = Math.floor(Math.random() * 100) + 1;
+            let attempts = 0;
+
+            while (true) {
+                const userGuess = prompt("Угадайте число от 1 до 100:");
+                attempts++;
+
+                if (userGuess === null) {
+                    alert("Игра завершена.");
+                    break;
+                }
+
+                const guess = parseInt(userGuess, 10);
+
+                if (isNaN(guess)) {
+                    alert("Введите число.");
+                    continue;
+                }
+
+                if (guess === targetNumber) {
+                    alert(`Вы угадали! Число было ${targetNumber}. Вы сделали ${attempts} попыток.`);
+                    break;
+                } else if (guess < targetNumber) {
+                    alert("Загаданное число больше.");
+                } else {
+                    alert("Загаданное число меньше.");
+                }
+            }
+        }
+        // Игра Простая арифметика
+        // Игра Переверни текст
+        // Игра Камень, ножницы, бумага
+        // Игра Простая викторина
+        // Игра Генератор случайных цветов
+    </script>
 </head>
 <body>
     <div class="top center">
@@ -140,7 +178,7 @@
                                 <h3 class="block-games__name">Угадай число</h3>
                                 <p class="block-games__par">Попробуй угадать случайное <br>число от 1 до 100.</p>
                                 <form action="#" class="block-games__button">
-                                    <button class="block-games__button-item">Играть!</button>
+                                    <button class="block-games__button-item" onclick="guessNumber()">Играть!</button>
                                 </form>
                             </div>
                             <img class="block-games__img" src="./Изображения/BigGames1.jpeg" alt="Games1">                            
