@@ -41,6 +41,46 @@
             }
         }
         // Игра Простая арифметика
+        function simpleMath() {
+            const operations = ['+', '-', '*', '/'];
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            const operation = operations[Math.floor(Math.random() * operations.length)];
+
+            let result;
+
+            switch (operation) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+            }
+
+            const userAnswer = prompt(`Сколько будет ${num1} ${operation} ${num2}?`);
+
+            if (userAnswer === null) {
+                alert("Игра завершена.");
+                return;
+            }
+
+            const answer = parseFloat(userAnswer);
+
+            if (isNaN(answer)) {
+                alert("Введите число.");
+            } else if (answer === result) {
+                alert("Правильно!");
+            } else {
+                alert(`Неправильно. Правильный ответ: ${result}.`);
+            }
+        }
         // Игра Переверни текст
         // Игра Камень, ножницы, бумага
         // Игра Простая викторина
@@ -197,7 +237,7 @@
                                 <h3 class="block-games__name">Простая арифметика</h3>
                                 <p class="block-games__par">Попробуй решить простые арифметические задачи.</p>
                                 <form action="#" class="block-games__button">
-                                    <button class="block-games__button-item">Играть!</button>
+                                    <button class="block-games__button-item" onclick="simpleMath()">Играть!</button>
                                 </form>
                             </div>                  
                         </article>
