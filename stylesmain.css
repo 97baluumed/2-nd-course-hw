@@ -269,6 +269,7 @@ body {
 }
 .block-games__text {
   padding: 48px;
+  width: 504px;
 }
 .block-games__img {
   border-radius: 30px;
@@ -459,6 +460,7 @@ body {
     padding-left: 29.04px;
     padding-right: 29.04px;
     padding-bottom: 32.67px;
+    width: 284.93px;
   }
   .mini-games {
     height: auto;

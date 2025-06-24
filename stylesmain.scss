@@ -217,7 +217,6 @@ body {
     left 1320px top 126px,
     left 1249px top 3414px,
     left 1319px top 3366px;
-    
     &__title {
         padding-top: 46px;
         color: rgb(255, 255, 255);
@@ -263,9 +262,11 @@ body {
     }
     &__text {
         padding: 48px;
+        width: 504px;
     }
     &__img {
         border-radius: 30px;
+        
     }
     &__button {
     display: flex;
