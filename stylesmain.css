@@ -422,10 +422,6 @@ body {
   }
 }
 @media (max-width: 1024px) {
-  .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
-  }
   .about {
     height: auto;
   }
@@ -439,8 +435,34 @@ body {
   .block-games {
     flex-direction: column;
   }
+  .block-games__name {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .block-games__par {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 16px;
+  }
+  .block-games__button-item {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    margin-top: 32px;
+  }
+  .block-games__button-item:hover {
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+  }
+  .block-games__text {
+    padding-top: 29.04px;
+    padding-left: 29.04px;
+    padding-right: 29.04px;
+    padding-bottom: 32.67px;
+  }
   .mini-games {
     height: auto;
+    padding-bottom: 10px;
   }
   .mini-games__games {
     display: flex;
