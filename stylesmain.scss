@@ -232,9 +232,10 @@ body {
     }
     &__content {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 32px;
         padding-top: 72px;
+        width: 100%;
     }
 }
 .block-games {
@@ -306,4 +307,5 @@ body {
         text-align: center;
     }
 }
-@import 'mobile'
+@import 'mobile';
+@import 'tablet'
