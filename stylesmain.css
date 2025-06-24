@@ -157,15 +157,18 @@ body {
 }
 
 .about__content {
+  margin-top: 72px;
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
-  padding-top: 72px;
+  width: 100%;
 }
 
 .about__content-block {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  display: grid;
   gap: 32px;
+  max-width: 100%;
 }
 
 .games {
