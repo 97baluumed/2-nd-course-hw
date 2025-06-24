@@ -75,6 +75,7 @@ body {
 .line-wrapper {
     display: flex;
     gap: 0px;
+    overflow: hidden;
 }
 .line-align {
     padding-left: 49px;
