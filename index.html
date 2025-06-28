@@ -82,6 +82,17 @@
             }
         }
         // Игра Переверни текст
+        function reverseText() {
+            const userInput = prompt("Введите текст:");
+
+            if (userInput === null) {
+                alert("Игра завершена.");
+                return;
+            }
+
+            const reversedText = userInput.split('').reverse().join('');
+            alert(`Перевернутый текст: ${reversedText}`);
+        }
         // Игра Камень, ножницы, бумага
         // Игра Простая викторина
         // Игра Генератор случайных цветов
@@ -251,7 +262,7 @@
                                 <h3 class="block-games__name">Переверни текст</h3>
                                 <p class="block-games__par">Попробуй ввести текст, который <br>будет перевернут.</p>
                                 <form action="#" class="block-games__button">
-                                    <button class="block-games__button-item">Играть!</button>
+                                    <button class="block-games__button-item" onclick="reverseText()">Играть!</button>
                                 </form>
                             </div>
                             <img class="block-games__img" src="./Изображения/BigGames3.jpeg" alt="Games3">                            
