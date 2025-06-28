@@ -95,6 +95,46 @@
         }
         // Игра Камень, ножницы, бумага
         // Игра Простая викторина
+        function quiz() {
+            const questions = [
+                {
+                question: "Столица Франции?",
+                options: ["Париж", "Лондон", "Берлин", "Рим"],
+                answer: "Париж"
+                },
+                {
+                question: "Самый большой океан?",
+                options: ["Тихий", "Атлантический", "Индийский", "Северный Ледовитый"],
+                answer: "Тихий"
+                },
+                {
+                question: "Сколько планет в Солнечной системе?",
+                options: ["8", "9", "10", "7"],
+                answer: "8"
+                }
+            ];
+
+            let score = 0;
+
+            for (let i = 0; i < questions.length; i++) {
+                const question = questions[i];
+                const userAnswer = prompt(`${question.question}\n${question.options.join('\n')}`);
+
+                if (userAnswer === null) {
+                alert("Игра завершена.");
+                break;
+                }
+
+                if (userAnswer === question.answer) {
+                score++;
+                alert("Правильно!");
+                } else {
+                alert(`Неправильно. Правильный ответ: ${question.answer}.`);
+                }
+            }
+
+            alert(`Вы ответили правильно на ${score} из ${questions.length} вопросов.`);
+        }
         // Игра Генератор случайных цветов
     </script>
 </head>
@@ -290,7 +330,7 @@
                                 <h3 class="block-games__name">Простая <br>викторина</h3>
                                 <p class="block-games__par">Отвечай на вопросы викторины <br>с вариантами ответов.</p>
                                 <form action="#" class="block-games__button">
-                                    <button class="block-games__button-item">Играть!</button>
+                                    <button class="block-games__button-item" onclick="quiz()">Играть!</button>
                                 </form>
                             </div>
                             <img class="block-games__img" src="./Изображения/BigGames5.jpeg" alt="Games5">
