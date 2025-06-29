@@ -9,3 +9,10 @@ functionWithCallback((name, surname) => {
    console.log(`Привет, ${name} ${surname}!`);
    // Выведет в консоль «Привет, Глеб Фокин!»
 });
+
+function add(number1, number2) {
+   return number1 + number2;
+}
+
+console.log(add(5, 3)); // 8
+console.log(add(10, 3)); // 13
