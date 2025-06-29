@@ -145,7 +145,7 @@ console.log("Массив с четными числами:", evenNumbers);
 //Задание 15
 const originalArrayTwo = [];
 for (let i = 0; i < 6; i++) {
-  originalArrayTwo.push(Math.floor(Math.random() * 10) + 1); // Генерируем случайное число от 1 до 10
+  originalArrayTwo.push(Math.floor(Math.random() * 10) + 1);
 }
 
 const average = originalArrayTwo.reduce((acc, curr) => acc + curr, 0) / originalArrayTwo.length;

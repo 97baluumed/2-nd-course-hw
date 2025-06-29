@@ -82,8 +82,66 @@
             }
         }
         // Игра Переверни текст
+        function reverseText() {
+            const userInput = prompt("Введите текст:");
+
+            if (userInput === null) {
+                alert("Игра завершена.");
+                return;
+            }
+
+            const reversedText = userInput.split('').reverse().join('');
+            alert(`Перевернутый текст: ${reversedText}`);
+        }
         // Игра Камень, ножницы, бумага
         // Игра Простая викторина
+        const quiz = [
+            {
+                question: "Какой цвет небо?",
+                options: ["1. Красный", "2. Синий", "3. Зеленый"],
+                correctAnswer: 2
+            },
+            {
+                question: "Сколько дней в неделе?",
+                options: ["1. Шесть", "2. Семь", "3. Восемь"],
+                correctAnswer: 2
+            },
+            {
+                question: "Сколько у человека пальцев на одной руке?",
+                options: ["1. Четыре", "2. Пять", "3. Шесть"],
+                correctAnswer: 2
+            }
+            ];
+
+        function startQuiz() {
+            let correctCount = 0;
+
+            for (let i = 0; i < quiz.length; i++) {
+                const question = quiz[i];
+                const userAnswer = prompt(`${question.question}\n${question.options.join('\n')}`);
+
+                if (userAnswer === null) {
+                    alert('Игра завершена.');
+                    return;
+                }
+
+                const answer = parseInt(userAnswer);
+
+                if (isNaN(answer)) {
+                    alert('Введите число.');
+                    continue;
+                }
+
+                if (answer === question.correctAnswer) {
+                    correctCount++;
+                    alert('Правильно!');
+                } else {
+                    alert(`Неправильно. Правильный ответ: ${question.correctAnswer}.`);
+                }
+            }
+
+            alert(`Вы ответили правильно на ${correctCount} из ${quiz.length} вопросов.`);
+        }
         // Игра Генератор случайных цветов
     </script>
 </head>
@@ -251,7 +309,7 @@
                                 <h3 class="block-games__name">Переверни текст</h3>
                                 <p class="block-games__par">Попробуй ввести текст, который <br>будет перевернут.</p>
                                 <form action="#" class="block-games__button">
-                                    <button class="block-games__button-item">Играть!</button>
+                                    <button class="block-games__button-item" onclick="reverseText()">Играть!</button>
                                 </form>
                             </div>
                             <img class="block-games__img" src="./Изображения/BigGames3.jpeg" alt="Games3">                            
@@ -279,7 +337,7 @@
                                 <h3 class="block-games__name">Простая <br>викторина</h3>
                                 <p class="block-games__par">Отвечай на вопросы викторины <br>с вариантами ответов.</p>
                                 <form action="#" class="block-games__button">
-                                    <button class="block-games__button-item">Играть!</button>
+                                    <button class="block-games__button-item" onclick="startQuiz()">Играть!</button>
                                 </form>
                             </div>
                             <img class="block-games__img" src="./Изображения/BigGames5.jpeg" alt="Games5">
@@ -308,6 +366,6 @@
             <h2 class="footer__title">Все права защищены.</h2>
         </div>
     </footer>
-    <script src="./hw-8.js"></script>
+    <script src="./hw-9.js"></script>
 </body>
 </html>
