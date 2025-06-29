@@ -1,18 +1,78 @@
-function functionWithCallback(callback) {
-   // Передаем в колбэк-функцию 2 аргумента: "Глеб" и "Фокин"
-   callback("Глеб", "Фокин");
+//Задание 1
+const people = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
+];
+
+console.log(people.sort((a, b) => a.age - b.age));
+
+//Задание 2
+function isPositive(num) {
+    return num > 0;
 }
 
-functionWithCallback((name, surname) => {
-   // Внутри колбэк-функции мы можем использовать данные,
-   // которые передает в него код, который его вызывает
-   console.log(`Привет, ${name} ${surname}!`);
-   // Выведет в консоль «Привет, Глеб Фокин!»
-});
-
-function add(number1, number2) {
-   return number1 + number2;
+function isMale(person) {
+    return person.gender === 'male';
 }
 
-console.log(add(5, 3)); // 8
-console.log(add(10, 3)); // 13
+function filter(arr, ruleFunction) {
+    const result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (ruleFunction(arr[i])) {
+        result.push(arr[i]);
+        }
+    }
+    return result;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const peopleTwo = [
+    { name: 'Глеб', gender: 'male' },
+    { name: 'Анна', gender: 'female' },
+    { name: 'Олег', gender: 'male' },
+    { name: 'Оксана', gender: 'female' }
+];
+
+console.log(filter(peopleTwo, isMale));
+
+//Задание 3
+function logDate() {
+  const currentDate = new Date();
+  console.log(currentDate);
+}
+
+function startInterval() {
+  const intervalId = setInterval(logDate, 3000);
+
+  setTimeout(() => {
+    clearInterval(intervalId);
+    console.log("30 секунд прошло");
+  }, 30000);
+}
+
+startInterval();
+
+//Задание 4
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+}
+
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
+//Задание 5
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
+}
+
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(() => sayHi('Глеб'));
