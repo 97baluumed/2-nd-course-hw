@@ -87,7 +87,7 @@ const quiz = [
         options: ["1. Четыре", "2. Пять", "3. Шесть"],
         correctAnswer: 2
     }
-    ];
+];
 function startQuiz() {
     let correctCount = 0;
     for (let i = 0; i < quiz.length; i++) {
