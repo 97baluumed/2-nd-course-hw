@@ -1,0 +1,66 @@
+@media (max-width: 1024px) {
+    .about {
+        height: auto;
+    }
+
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__content-block {
+        width: 100%; 
+    }
+    .block-games {
+        flex-direction: column;
+        &__name {
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__par {
+            font-size: 16px;
+            line-height: 20px;
+            padding-top: 16px;
+        }
+        &__button-item {
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            margin-top: 32px;
+            &:hover {
+                background: rgb(32, 32, 39);
+                color: rgb(255, 255, 255);
+            }
+        }
+        &__text {
+            padding-top: 29.04px;
+            padding-left: 29.04px;
+            padding-right: 29.04px;
+            padding-bottom: 32.67px;
+            width: 284.93px;
+        }
+    }
+    .mini-games {
+        height: auto;
+        padding-bottom: 10px;
+        &__games {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .mini-games__link {
+        max-width: 343px;
+    }
+    .revers {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
