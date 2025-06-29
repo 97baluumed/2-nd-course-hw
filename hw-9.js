@@ -54,7 +54,6 @@ function randomArray(n) {
     return arr;
 }
 
-// Пример использования
 const res = randomArray(10);
 console.log(res);
 
