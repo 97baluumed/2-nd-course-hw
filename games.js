@@ -70,6 +70,45 @@ function reverseText() {
     alert(`Перевернутый текст: ${reversedText}`);
 }
 // Игра Камень, ножницы, бумага
+const choices = ["камень", "ножницы", "бумага"];
+
+function getComputerChoice() {
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  return choices[randomIndex];
+}
+
+function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return "Ничья!";
+    } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        return "Вы выиграли!";
+    } else {
+        return "Вы проиграли!";
+    }
+    }
+
+function playGame() {
+    const userChoice = prompt("Выберите: камень, ножницы или бумага?");
+
+    if (userChoice === null) {
+        alert("Игра завершена.");
+        return;
+    }
+
+    if (!choices.includes(userChoice)) {
+        alert("Выберите камень, ножницы или бумагу.");
+        return;
+    }
+
+    const computerChoice = getComputerChoice();
+    const result = determineWinner(userChoice, computerChoice);
+
+    alert(`Вы выбрали ${userChoice}, компьютер выбрал ${computerChoice}. ${result}`);
+}
 // Игра Простая викторина
 const quiz = [
     {
