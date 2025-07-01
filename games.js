@@ -1,5 +1,6 @@
 // Игра Угадай число
 function guessNumber() {
+    event.preventDefault();
     const targetNumber = Math.floor(Math.random() * 100) + 1;
     let attempts = 0;
 
@@ -26,6 +27,7 @@ function guessNumber() {
 }
 // Игра Простая арифметика
 function simpleMath() {
+    event.preventDefault();
     const operations = ['+', '-', '*', '/'];
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
@@ -61,6 +63,7 @@ function simpleMath() {
 }
 // Игра Переверни текст
 function reverseText() {
+    event.preventDefault();
     const userInput = prompt("Введите текст:");
     if (userInput === null) {
         alert("Игра завершена.");
@@ -69,29 +72,11 @@ function reverseText() {
     const reversedText = userInput.split('').reverse().join('');
     alert(`Перевернутый текст: ${reversedText}`);
 }
-// Игра Камень, ножницы, бумага
-const choices = ["камень", "ножницы", "бумага"];
-
-function getComputerChoice() {
-  const randomIndex = Math.floor(Math.random() * choices.length);
-  return choices[randomIndex];
-}
-
-function determineWinner(userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
-        return "Ничья!";
-    } else if (
-        (userChoice === "камень" && computerChoice === "ножницы") ||
-        (userChoice === "ножницы" && computerChoice === "бумага") ||
-        (userChoice === "бумага" && computerChoice === "камень")
-    ) {
-        return "Вы выиграли!";
-    } else {
-        return "Вы проиграли!";
-    }
-    }
-
+//Игра Камень, ножницы, бумага
 function playGame() {
+    event.preventDefault();
+    const choices = ["камень", "ножницы", "бумага"];
+
     const userChoice = prompt("Выберите: камень, ножницы или бумага?");
 
     if (userChoice === null) {
@@ -99,15 +84,29 @@ function playGame() {
         return;
     }
 
-    if (!choices.includes(userChoice)) {
+    const normalizedUserChoice = userChoice.toLowerCase();
+
+    if (!choices.includes(normalizedUserChoice)) {
         alert("Выберите камень, ножницы или бумагу.");
         return;
     }
 
-    const computerChoice = getComputerChoice();
-    const result = determineWinner(userChoice, computerChoice);
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-    alert(`Вы выбрали ${userChoice}, компьютер выбрал ${computerChoice}. ${result}`);
+    let result;
+    if (normalizedUserChoice === computerChoice) {
+        result = "Ничья!";
+    } else if (
+        (normalizedUserChoice === "камень" && computerChoice === "ножницы") ||
+        (normalizedUserChoice === "ножницы" && computerChoice === "бумага") ||
+        (normalizedUserChoice === "бумага" && computerChoice === "камень")
+    ) {
+        result = "Вы выиграли!";
+    } else {
+        result = "Вы проиграли!";
+    }
+
+    alert(`Вы выбрали ${normalizedUserChoice}, компьютер выбрал ${computerChoice}. ${result}`);
 }
 // Игра Простая викторина
 const quiz = [
@@ -128,6 +127,7 @@ const quiz = [
     }
 ];
 function startQuiz() {
+    event.preventDefault();
     let correctCount = 0;
     for (let i = 0; i < quiz.length; i++) {
         const question = quiz[i];
