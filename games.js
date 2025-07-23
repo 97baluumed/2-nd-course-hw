@@ -151,3 +151,13 @@ function startQuiz() {
     alert(`Вы ответили правильно на ${correctCount} из ${quiz.length} вопросов.`);
 }
 // Игра Генератор случайных цветов
+function randomColorGenerator() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const backgroundEl = document.querySelectorAll('.about, .mini-games');
+
+    backgroundEl.forEach(el => {
+        el.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    })
+}
